@@ -19,3 +19,5 @@ class AccessKey(models.Model):
 class User(AbstractUser):
     # Add custom fields if necessary
     pass
+
+

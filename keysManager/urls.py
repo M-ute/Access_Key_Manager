@@ -1,7 +1,7 @@
 # keysManager/urls.py
 
 from django.urls import path, include
-from .views import register, user_login, user_logout, home
+from keysManager.views import register, user_login, user_logout, home
 
 urlpatterns = [
     path('register/', register, name='register'),

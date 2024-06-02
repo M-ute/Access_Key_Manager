@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">Welcome to the Home Page</h1>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>This is your home page content.</p>
+                        <!-- Navigation Buttons -->
+                        <a href="{% url 'register' %}" class="btn btn-primary btn-block mt-3">Register</a>
+                        <a href="{% url 'login' %}" class="btn btn-secondary btn-block mt-3">Login</a>
+                        <a href="{% url 'home' %}" class="btn btn-success btn-block mt-3">Home</a>
+                        <a href="{% url 'logout' %}" class="btn btn-danger btn-block mt-3">Logout</a>
+                        <a href="{% url 'password_reset' %}" class="btn btn-warning btn-block mt-3">Password Reset</a>
+                        <!-- Add more buttons as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

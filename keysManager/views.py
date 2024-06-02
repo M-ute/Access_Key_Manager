@@ -6,6 +6,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 from .forms import RegistrationForm
 
+
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
@@ -37,4 +38,8 @@ def user_logout(request):
 
 @login_required
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'keysManager/home.html')
+
+
+#def root_view(request):
+    #return render(request, 'root.html')
